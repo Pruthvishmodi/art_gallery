@@ -64,27 +64,40 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="element flex p-4 ">
-        <img
-          className="element-image p-8 m-8 border-2"
-          src="https://res.cloudinary.com/pruthvish/image/upload/c_scale,h_483,w_322/v1648292603/you%20x%20potfolia%20image/young-photographer-in-wintertime_yj2zkq.webp"
-          alt="Camera Parsons photo"
-        />
-        <div className="para flex flex-col items-center p-8 w-1/2 mx-auto my-10">
-          <address>SINCE 1993</address>
-          <h2 className="text-4xl from-neutral-400">
-            We are a creative film and video production company based in Bandung
-            Indonesia.
-          </h2>
-          <p>
-            We are a creative film and photo production company hungry for
-            quality in aesthetics. To create modern recognizable stuff we are
-            working with a strong network of experienced professionals. We set
-            up teams to shape your identity, push your idea and manage the
-            workflow from pre- to post-production.
-          </p>
+      <div className="container">
+        <div className="flex flex-wrap justify-around">
+          <div className="m-8 ml-20 relative">
+            <img
+              className="element-image  p-8 border-red-500  border-1"
+              src="https://res.cloudinary.com/pruthvish/image/upload/c_scale,h_483,w_322/v1648292603/you%20x%20potfolia%20image/young-photographer-in-wintertime_yj2zkq.webp"
+              alt="Camera Parsons photo"
+            />
+            <div className="deco ">
+
+            </div>
+
+          </div>
+
+          <div className="flex-col p-7 text-left  md:p-8 md:w-1/2 md:mx-auto md:my-10 ">
+
+            <address className="mb-8 text-center">SINCE 1993</address>
+            <h2 className="items-center text-xl md:text-4xl lg:text-4xl from-neutral-400 mb-6 ">
+              We are a creative film and video production company based in Bandung
+              Indonesia.
+            </h2>
+            <div className="divider pb-4 border-t-4 border-red-500 w-1/5">
+            </div>
+            <p className="profileInfo sm:h-16 md:h-16 text-lg sm:text-xl md:text-lg lg:text:2xl">
+              We are a creative film and photo production company hungry for
+              quality in aesthetics. To create modern recognizable stuff we are
+              working with a strong network of experienced professionals. We set
+              up teams to shape your identity, push your idea and manage the
+              workflow from pre- to post-production.
+            </p>
+          </div>
         </div>
       </div>
+
     </>
   );
 };
