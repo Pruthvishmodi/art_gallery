@@ -10,12 +10,12 @@ const Index = () => {
 
   return (
     <>
-      <div className='"relative h-screen mb-12 overflow-hidden'>
+      <div className="relative h-screen mb-12 overflow-hidden">
         <video
           ref={videoRef}
           muted
           loop
-          className="absolute -z-10 w-auto min-w-full min-h-full max-w-none"
+          className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
           preload
         >
           <source
@@ -23,7 +23,7 @@ const Index = () => {
             type="video/mp4"
           />
         </video>
-        <div className="flex p-8 text-white justify-around">
+        <div className="relative z-20 flex p-8 text-white justify-around">
           <img
             className="image"
             src="https://res.cloudinary.com/pruthvish/image/upload/c_scale,h_60,w_165/v1648279748/you%20x%20potfolia%20image/th-removebg-preview_aooxmz.webp"
@@ -37,7 +37,7 @@ const Index = () => {
             <a href="#contact">Contact</a>
           </nav>
         </div>
-        <div className="allitem flex flex-col justify-center items-center mx-auto h-full ">
+        <div className="relative z-20 mx-auto h-full ">
           <div className="filmpage text-white flex justify-between items-center w-6/12 mx-auto">
             <span>FILM</span>
             <span>||</span>
@@ -64,13 +64,13 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="element flex ">
+      <div className="element flex p-4 ">
         <img
-          className="element-image p-8 border-2"
+          className="element-image p-8 m-8 border-2"
           src="https://res.cloudinary.com/pruthvish/image/upload/c_scale,h_483,w_322/v1648292603/you%20x%20potfolia%20image/young-photographer-in-wintertime_yj2zkq.webp"
           alt="Camera Parsons photo"
         />
-        <div className="para flex flex-col items-center p-8 w-1/2 mx-auto flex items-center my-10">
+        <div className="para flex flex-col items-center p-8 w-1/2 mx-auto my-10">
           <address>SINCE 1993</address>
           <h2 className="text-4xl from-neutral-400">
             We are a creative film and video production company based in Bandung
